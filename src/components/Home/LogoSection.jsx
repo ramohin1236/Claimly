@@ -42,13 +42,14 @@ const LogoSection = () => {
             </div>
         </div>
         {/* right section */}
-          <div className=' flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 justify-center items-center'>
+          <div className=' flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-5 justify-center items-center'>
               <div className='px-14 py-6 bg-white border border-[#2563EB] rounded-lg flex items-center justify-center'>
                   <Image 
                   src={logofirst}
                   height={100}
                   width={100}
                   alt='AAMI'
+                  className='object-cover'
                 
                   />
               </div>
@@ -58,6 +59,7 @@ const LogoSection = () => {
                   height={100}
                   width={100}
                   alt='AAMI'
+                   className='object-cover'
                   />
               </div>
               <div className='px-14 py-6 bg-white border border-[#2563EB] rounded-lg flex items-center justify-center'>
@@ -66,6 +68,7 @@ const LogoSection = () => {
                   height={100}
                   width={100}
                   alt='AAMI'
+                   className='object-cover'
                   />
               </div>
               <div className='px-14 py-6 bg-white border border-[#2563EB] rounded-lg flex items-center justify-center'>
@@ -74,6 +77,7 @@ const LogoSection = () => {
                   height={100}
                   width={100}
                   alt='AAMI'
+                   className='object-cover'
                   />
               </div>
               <div className='px-14 py-6 bg-white border border-[#2563EB] rounded-lg flex items-center justify-center'>
@@ -82,6 +86,7 @@ const LogoSection = () => {
                   height={100}
                   width={100}
                   alt='AAMI'
+                   className='object-cover'
                   />
               </div>
               <div className='px-14 py-6 bg-white border border-[#2563EB] rounded-lg flex items-center justify-center'>
@@ -90,6 +95,7 @@ const LogoSection = () => {
                   height={100}
                   width={100}
                   alt='AAMI'
+                   className='object-cover'
                   />
               </div>
               
