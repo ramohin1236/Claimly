@@ -45,7 +45,7 @@ any) => (
 
 const RechartsComponent = () => {
   return (
-    <div className="pt-10 md:pt-28 flex flex-col gap-4 md:gap-16">
+    <div className="pt-10 md:pt-28 flex flex-col gap-4 md:gap-16 md:pb-28">
       <div className="flex justify-center flex-col  items-center gap-4">
         <div>
           <h2 className="text-2xl lg:text-[40px] leading-[120%] font-semibold">

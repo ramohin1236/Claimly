@@ -12,7 +12,7 @@ import leftCorner from "../../../public/leftcorner.svg";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#27272A] pt-20 pb-20 px-6 md:px-10 tracking-wide relative overflow-hidden">
-      <div className="max-w-[1240px] mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-0">
           {/* First column */}
           <div className="flex flex-col gap-3 md:gap-5 max-w-96">
@@ -171,7 +171,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="h-0.5 bg-white/40 max-w-[1300] mx-auto mt-20"></div>
+      <div className="h-0.5 bg-white/40 max-w-[1500] mx-auto mt-20"></div>
 
       <div className="mx-auto max-w-[800px]">
           <p className="text-white text-xs text-center mt-8">

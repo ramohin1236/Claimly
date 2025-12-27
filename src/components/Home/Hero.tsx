@@ -11,13 +11,7 @@ const Hero = () => {
       <div className="lg:flex justify-around items-center mx-auto">
         {/* Left side */}
         <div className="flex flex-col flex-1 gap-2 md:gap-8">
-          {/* top title */}
-          <div className="flex py-1.5 px-4 gap-2.5 items-center border border-[#2563EB] bg-[#2563EB0D] rounded-full w-fit mb-2 md:mb-6">
-            <div className="w-2.5 h-2.5 bg-[#22C55E] rounded-full"></div>
-            <p className="tracking-[1px] leading-[120%]">
-              Free during early access
-            </p>
-          </div>
+         
 
           <div className="flex flex-col gap-6 md:gap-9 ">
             <h1 className="font-bold text-3xl md:text-[44px] leading-[120%]">
