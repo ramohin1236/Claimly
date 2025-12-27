@@ -171,6 +171,14 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
+      <div className="h-0.5 bg-white/40 max-w-[1300] mx-auto mt-20"></div>
+
+      <div className="mx-auto max-w-[800px]">
+          <p className="text-white text-xs text-center mt-8">
+              Claimly does not provide financial or legal advice. If you need specific financial or legal advice, you should seek the advice of a qualified expert. All information contained on this website is for information purposes only. 
+            </p>
+      </div>
+
       {/* Background decoration */}
       <div className="absolute top-6 right-6 hidden md:block pointer-events-none">
         <Image src={FooterBg} alt="Footer Background" />
