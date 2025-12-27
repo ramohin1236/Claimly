@@ -12,7 +12,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/", isActive: true },
     { name: "Claimly Guides", href: "/claimly_guides" },
-    { name: "About Us", href: "#" },
+    { name: "About Us", href: "/about" },
     { name: "FAQ", href: "#" },
     { name: "Contact Us", href: "#" },
   ];
