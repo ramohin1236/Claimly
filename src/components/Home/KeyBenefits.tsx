@@ -66,9 +66,9 @@ const KeyBenefits = () => {
       </div>
 
       {/* cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {benefitsData.map((item, index) => (
-          <div key={index} className="border-color-default p-8 bg-white">
+          <div key={index} className="border-color-default p-8 bg-white items-stretch h-full flex flex-col">
             <Image
               src={item.img}
               alt={item.alt}
@@ -77,7 +77,7 @@ const KeyBenefits = () => {
               className="mb-2.5"
             />
             <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-            <p className="text-color-secondary text-sm">
+            <p className="text-color-secondary text-sm flex-1">
               {item.description}
             </p>
           </div>

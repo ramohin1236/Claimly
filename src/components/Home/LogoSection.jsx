@@ -10,7 +10,8 @@ import logosixth from '../../../public/image 21 (6).png'
 
 const LogoSection = () => {
   return (
-    <div className='flex flex-col xl:flex-row justify-between items-center  gap-10 lg:gap-16 py-10 lg:py-28'>
+   <div className='py-10 md:py-28'>
+      <div className='flex flex-col p-16 bg-linear-to-br from-[#DBEAFE] to-[#F9FAFB] rounded-[40px] outline-[1px] outline-[#0000001A] xl:flex-row justify-between items-center  gap-10'>
         {/* left section */}
         <div className='flex flex-1 flex-col gap-4 md:gap-2.5'>
             <div>
@@ -22,20 +23,20 @@ const LogoSection = () => {
             </div>
             <div>
                 
-<ul className="mt-2.5 space-y-2.5">
-  {[
-    "Damage to your vehicle",
-    "Key considerations under the Insurance Contracts Act 1984 (Cth)",
-    "Insurer obligations under the General Insurance Code of Practice (GICOP)",
-    "Complaint obligations under ASIC Regulatory Guide 271 (RG 271)",
-    "An example complaint letter",
-  ].map((item, index) => (
-    <li key={index} className="flex items-start gap-2.5">
-      <ListIcon className="list-icon shrink-0 mt-0.5" />
-      <span className="default-list-text">{item}</span>
-    </li>
-  ))}
-</ul>
+                <ul className="mt-2.5 space-y-2.5">
+                  {[
+                    "Damage to your vehicle",
+                    "Key considerations under the Insurance Contracts Act 1984 (Cth)",
+                    "Insurer obligations under the General Insurance Code of Practice (GICOP)",
+                    "Complaint obligations under ASIC Regulatory Guide 271 (RG 271)",
+                    "An example complaint letter",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-2.5">
+                      <ListIcon className="list-icon shrink-0 mt-0.5" />
+                      <span className="default-list-text">{item}</span>
+                    </li>
+                  ))}
+                  </ul>
 
                    
                 
@@ -101,6 +102,7 @@ const LogoSection = () => {
               
           </div>
     </div>
+   </div>
   )
 }
 
