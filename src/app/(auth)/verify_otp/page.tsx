@@ -67,6 +67,7 @@ const VerifyOtp: React.FC = () => {
         {/* Left Image */}
         <div className="w-full hidden lg:block">
           <Image
+            priority
             src={verifyImage}
             alt="verify-otp-image"
             width={100}

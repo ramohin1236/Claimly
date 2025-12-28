@@ -16,6 +16,7 @@ const Page: React.FC = () => {
         {/* Left Image */}
         <div className="w-full hidden lg:block">
           <Image
+            priority
             src={loginImage}
             alt="login-image"
             width={100}
