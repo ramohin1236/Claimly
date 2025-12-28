@@ -129,7 +129,8 @@ const DropdownItem: React.FC<ItemProps> = ({
   <Link
     href={href}
     onClick={onClick}
-    className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-blue-50 text-[#475569]"
+    className="flex items-center justify-between px-3 py-2
+     rounded-lg hover:bg-blue-50 text-[#475569]"
   >
     <div className="flex items-center gap-3">
       {icon}
