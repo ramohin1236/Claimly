@@ -26,7 +26,7 @@ const Page: React.FC = () => {
         {/* Right Form */}
         <div className="w-full p-8 max-w-lg mx-auto flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#1E293B] text-3xl">
+            <h1 className="text-[#1E293B]/70 text-3xl">
               Login Your Account
             </h1>
             <p className="text-[#64748B] text-sm">
@@ -38,7 +38,7 @@ const Page: React.FC = () => {
             <div className="space-y-6">
               {/* Email */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Email
                 </label>
                 <input
@@ -51,7 +51,7 @@ const Page: React.FC = () => {
 
               {/* Password */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Password
                 </label>
 
@@ -114,7 +114,7 @@ const Page: React.FC = () => {
 
               {/* Remember + Forgot */}
               <div className="flex justify-between items-center">
-                <label className="flex items-center gap-2 text-sm text-[#1E293B]">
+                <label className="flex items-center gap-2 text-sm text-[#1E293B]/70">
                   <input type="checkbox" className="rounded" />
                   Remember me
                 </label>

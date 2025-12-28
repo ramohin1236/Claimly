@@ -78,7 +78,7 @@ const VerifyOtp: React.FC = () => {
         {/* Right Form */}
         <div className="w-full p-8 max-w-lg mx-auto flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#1E293B] text-3xl">
+            <h1 className="text-[#1E293B]/70 text-3xl">
               Verify OTP
             </h1>
             <p className="text-[#64748B] text-sm">
@@ -123,12 +123,14 @@ const VerifyOtp: React.FC = () => {
               </div>
 
               {/* Submit Button */}
+              <Link href="/reset_password">
               <button
                 type="submit"
                 className="w-full py-3.5 rounded-xl bg-[#2563EB]/80 hover:bg-[#2563EB] text-white text-sm font-semibold transition-all shadow-lg active:scale-[0.98]"
               >
                 Verify
               </button>
+              </Link>
 
              
             </div>

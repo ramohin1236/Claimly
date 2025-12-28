@@ -35,7 +35,7 @@ const Page: React.FC = () => {
             <div className="space-y-6">
               {/* Email */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Email Address
                 </label>
                 <input

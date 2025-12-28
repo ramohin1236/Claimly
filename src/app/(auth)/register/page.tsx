@@ -27,7 +27,7 @@ const Page: React.FC = () => {
         {/* Right Form */}
         <div className="w-full p-8 max-w-lg mx-auto flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#1E293B] text-3xl">
+            <h1 className="text-[#1E293B]/70 text-3xl">
               Create Your Account
             </h1>
             <p className="text-[#64748B] text-sm">
@@ -40,45 +40,45 @@ const Page: React.FC = () => {
 
               {/* Full Name */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Full Name
                 </label>
                 <input
                   type="text"
                   required
                   placeholder="Enter full name"
-                  className="w-full text-sm text-[#1E293B] bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
+                  className="w-full text-sm text-[#1E293B]/70 bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
                 />
               </div>
 
               {/* Email */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Email Address
                 </label>
                 <input
                   type="email"
                   required
                   placeholder="@esteban_schiller@gmail.com"
-                  className="w-full text-sm text-[#1E293B] bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
+                  className="w-full text-sm text-[#1E293B]/70 bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
                 />
               </div>
               {/* Phone */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   required
                   placeholder="+ 61 412 345 678"
-                  className="w-full text-sm text-[#1E293B] bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
+                  className="w-full text-sm text-[#1E293B]/70 bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
                 />
               </div>
 
               {/* Password */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Password
                 </label>
 
@@ -87,7 +87,7 @@ const Page: React.FC = () => {
                     type={showPassword ? "text" : "password"}
                     required
                     placeholder="Enter password"
-                    className="w-full text-sm text-[#1E293B] bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
+                    className="w-full text-sm text-[#1E293B]/70 bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
                   />
 
                   {/* Eye Icon */}
@@ -140,7 +140,7 @@ const Page: React.FC = () => {
               </div>
               {/* Confirm Password */}
               <div>
-                <label className="text-[#1E293B] text-[15px] font-medium mb-2 block">
+                <label className="text-[#1E293B]/70 text-[15px] font-medium mb-2 block">
                   Confirm Password
                 </label>
 
@@ -149,7 +149,7 @@ const Page: React.FC = () => {
                     type={showConfirmPassword ? "text" : "password"}
                     required
                     placeholder="Enter password"
-                    className="w-full text-sm text-[#1E293B] bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
+                    className="w-full text-sm text-[#1E293B]/70 bg-white focus:bg-transparent pl-4 pr-4 py-3.5 rounded-xl border border-[#DBEAFE] focus:border-blue-600 outline-none"
                   />
 
                   {/* Eye Icon */}
