@@ -120,7 +120,7 @@ const Page: React.FC = () => {
                 </label>
 
                 <Link
-                  href="/"
+                  href="/verify_email"
                   className="text-[#4E9AF1] text-sm hover:underline"
                 >
                   Forgot Password?

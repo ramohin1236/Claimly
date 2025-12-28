@@ -12,7 +12,11 @@ export default function LayoutWrapper({
     const pathname = usePathname();
 
     // Define paths where Navbar and Footer should be hidden
-    const isAuthPage = pathname === "/login" || pathname === "/register";
+    const isAuthPage = 
+    pathname === "/login" || 
+    pathname === "/register" ||
+    pathname === "/verify_email" ||
+    pathname === "/verify_otp";
 
     return (
         <>

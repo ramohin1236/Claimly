@@ -218,7 +218,7 @@ const Page: React.FC = () => {
               type="submit"
               className="w-full mt-5 py-3 rounded-md bg-[#2563EB]/80 hover:bg-[#2563EB] text-white text-sm font-medium transition"
             >
-              Sign in
+              Next
             </button>
 
            
