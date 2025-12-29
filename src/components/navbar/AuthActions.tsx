@@ -42,7 +42,7 @@ const AuthActions: React.FC<AuthActionsProps> = ({
             width={36}
             height={36}
             alt="profile"
-            className="cursor-pointer rounded-full border"
+            className="cursor-pointer border"
           />
         </button>
 

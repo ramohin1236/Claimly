@@ -144,3 +144,13 @@ body {
   @apply py-12 md:py-20 lg:py-28
 }
 
+/* .recharts-layer {
+  overflow: hidden;
+}
+.recharts-bar{
+  overflow: hidden;
+}
+.recharts-bar-rectangles{
+  overflow: hidden;
+  display: ;
+} */
