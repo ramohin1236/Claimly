@@ -59,7 +59,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex-1 ">
-          <Link href="/my_claims">
+          <Link href="/update_profile">
             <Button
               rightIcon={
                 <Image
