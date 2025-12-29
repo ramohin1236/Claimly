@@ -21,7 +21,7 @@ const margin = {
   bottom: 25,
 };
 
-const formatAxisTick = (value: string) => `*${value}*`;
+const formatAxisTick = (value: string) => value;
 
 const renderCustomBarLabel = ({
   x,
@@ -29,10 +29,9 @@ const renderCustomBarLabel = ({
   width,
   value,
 }: // eslint-disable-next-line @typescript-eslint/no-explicit-any
-any) => (
+  any) => (
   <text
     x={x + width / 2}
-    // x={x}
     y={y}
     fill="#475569"
     textAnchor="middle"
@@ -80,7 +79,7 @@ const RechartsComponent = () => {
               dataKey="uv"
               fill="#2563EB"
               radius={[6, 6, 0, 0]}
-              // label={renderCustomBarLabel}
+            // label={renderCustomBarLabel}
             />
           </BarChart>
         </ResponsiveContainer>

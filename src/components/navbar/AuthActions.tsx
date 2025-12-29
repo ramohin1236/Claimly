@@ -84,7 +84,7 @@ const AuthActions: React.FC<AuthActionsProps> = ({
 
             {/* Logout */}
             <Link
-              href="/logout"
+              href="/"
               className="mt-2 flex items-center gap-3 px-3 py-2 rounded-md text-[#64748B] hover:bg-red-50"
             >
               <LogOut size={18} />
@@ -157,7 +157,7 @@ const AuthActions: React.FC<AuthActionsProps> = ({
               label="Account Settings"
             />
             <MobileItem
-              href="/logout"
+              href="/"
               icon={<LogOut />}
               label="Sign Out"
               danger
