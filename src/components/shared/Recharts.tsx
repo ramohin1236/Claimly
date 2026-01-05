@@ -8,16 +8,60 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+
 const data = [
-  { name: "NRMA", uv: 400 },
-  { name: "AAMI", uv: 300 },
-  { name: "Allianz", uv: 300 },
-  { name: "Youi", uv: 200 },
-  { name: "BD", uv: 278 },
-  { name: "Suncorp", uv: 189 },
-  { name: "RACV", uv: 189 },
-  { name: "Other", uv: 189 },
+  { name: "NRMA", uv: 400, change: -0.02 },
+  { name: "AAMI", uv: 300, change: 0.03 },
+  { name: "Allianz", uv: 300, change: 0.01 },
+  { name: "Youi", uv: 200, change: -0.01 },
+  { name: "BD", uv: 278, change: 0.04 },
+  { name: "Suncorp", uv: 189, change: 0.02 },
+  { name: "RACV", uv: 189, change: -0.01 },
+  { name: "Other", uv: 189, change: 0.0 },
 ];
+
+type RechartsTooltip = {
+  active?: boolean;
+  payload?: Array<{ payload?: { uv?: number; change?: number } }>;
+};
+
+const CustomTooltip = ({ active, payload }: RechartsTooltip) => {
+  if (active && payload && payload.length) {
+    const item = payload?.[0]?.payload;
+    const uv = item?.uv ?? 0;
+    const change = item?.change ?? 0;
+    const isPositive = change >= 0;
+
+    return (
+      <div className="bg-white rounded-xl shadow-lg p-3 flex items-center gap-4 min-w-45">
+        <div className={`p-3 rounded-lg ${isPositive ? "bg-green-50" : "bg-red-50"}`}>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={`${isPositive ? "text-green-500" : "text-red-500"} w-6 h-6`}
+            aria-hidden
+          >
+            <path d="M3 16l4-8 4 6 6-10 4 8" />
+          </svg>
+        </div>
+
+        <div>
+          <p className="text-2xl font-bold text-black">{uv}</p>
+          <p className={`${isPositive ? "text-green-600" : "text-red-600"} font-medium text-sm`}>
+            {`${Math.abs(Math.round((change || 0) * 100))}% `}
+            <span className="text-gray-500 font-normal">vs Last Month</span>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+};
 
 const RechartsComponent = () => {
   return (
@@ -51,7 +95,7 @@ const RechartsComponent = () => {
               axisLine={{ stroke: "#2563EB" }}
             />
 
-            <Tooltip cursor={false} />
+            <Tooltip content={<CustomTooltip />} cursor={false} />
 
             <Bar
               dataKey="uv"

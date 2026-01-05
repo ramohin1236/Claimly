@@ -11,7 +11,7 @@ import linkdin from "../../../public/linkding.svg";
 import leftCorner from "../../../public/leftcorner.svg";
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#27272A] section-padding relative overflow-hidden text-white/90">
+    <footer className="bg-[#27272A] pt-20 pb-8 relative overflow-hidden text-white/90">
       <div className="nav-container">
         <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-0">
           {/* First column */}
