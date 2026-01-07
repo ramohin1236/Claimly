@@ -195,7 +195,7 @@ const Footer: React.FC = () => {
       <div className="absolute top-6 right-6 hidden md:block pointer-events-none">
         <Image src={FooterBg} alt="Footer Background" />
       </div>
-      <div className="absolute bottom-0 left-6 hidden md:block pointer-events-none">
+      <div className="absolute bottom-0 hidden md:block pointer-events-none">
         <Image src={leftCorner} alt="Footer Background" />
       </div>
     </footer>
