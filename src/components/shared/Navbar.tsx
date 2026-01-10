@@ -11,8 +11,8 @@ import AuthActions from "../navbar/AuthActions";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
- 
-  const isLogin = true;
+
+  const isLogin = false;
 
 
   const pathname = usePathname();
@@ -41,8 +41,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`px-4 py-2 rounded text-sm font-medium transition ${pathname === link.href
-                    ? "bg-[#2563EB] text-white"
-                    : "text-gray-700 hover:bg-gray-100"
+                  ? "bg-[#2563EB] text-white"
+                  : "text-gray-700 hover:bg-gray-100"
                   }`}
               >
                 {link.name}
@@ -99,8 +99,8 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
                     className={`block px-4 py-3 rounded-lg text-sm transition ${pathname === link.href
-                        ? "bg-[#2563EB] text-white"
-                        : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-[#2563EB] text-white"
+                      : "text-gray-700 hover:bg-gray-100"
                       }`}
                   >
                     {link.name}
