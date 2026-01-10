@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto  py-5 lg:py-16">
       {/* Hero Section */}
-      <div className="lg:flex justify-around items-center mx-auto">
+      <div className="lg:flex justify-between items-center mx-auto gap-8 xl:gap-12">
         {/* Left side */}
         <div className="flex flex-col flex-1 gap-2 md:gap-8">
 
@@ -30,11 +30,11 @@ const Hero = () => {
             </div>
 
             <div>
-             <Link href='/my_claims'>
-                 <Button variant="primary" size="lg" className="font-medium">
-                Analyse My Claim
-              </Button>
-             </Link>
+              <Link href='/my_claims'>
+                <Button variant="primary" size="lg" className="font-medium">
+                  Analyse My Claim
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center gap-1">
@@ -47,7 +47,12 @@ const Hero = () => {
         </div>
         {/* Right side */}
         <div className="flex-1 flex items-center justify-center lg:justify-end">
-          <Image src={HeroImage} alt="Hero Image" />
+          <Image
+            src={HeroImage}
+            alt="Hero Image"
+            priority
+            className="w-full h-auto max-w-[500px] xl:max-w-[600px] 2xl:max-w-none transition-transform duration-500 hover:scale-105"
+          />
         </div>
       </div>
     </div>
